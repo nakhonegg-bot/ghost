@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Chase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="hud">⏱ <span id="time">0.0</span> s</div>
+
+        <div id="game">
+            <span id="ghost">😎</span>
+            <span id="player">😖</span>
+            <div id="overlay" hidden>
+                <p>ຜີຈັບໄດ້ແລ້ວ! 💀</p>
+                <p id="final"></p>
+                <button id="restart">เล่นใหม่</button>
+            </div>
+        </div>
+
+        <div id="pad">
+            <button id="up" data-dir="up">⬆️</button>
+            <button id="left" data-dir="left">⬅️</button>
+            <button id="down" data-dir="down">⬇️</button>
+            <button id="right" data-dir="right">➡️</button>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
